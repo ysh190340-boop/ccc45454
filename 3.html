@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;600;700;800&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#b9c7e0", "surface-container-lowest": "#ffffff", "secondary-container": "#fd651e", "on-tertiary-container": "#79879e", "on-background": "#0b1c30", "on-tertiary-fixed-variant": "#3a485c", "on-surface-variant": "#44474d", "tertiary-fixed": "#d5e3fd", "surface-bright": "#f8f9ff", "on-secondary-container": "#571a00", "outline": "#75777e", "error-container": "#ffdad6", "on-tertiary-fixed": "#0d1c2f", "error": "#ba1a1a", "on-secondary": "#ffffff", "secondary": "#a73a00", "primary-fixed": "#d7e3ff", "surface-container-low": "#eff4ff", "on-error-container": "#93000a", "surface-tint": "#515f7a", "on-surface": "#0b1c30", "secondary-fixed": "#ffdbce", "outline-variant": "#c5c6ce", "surface-container-high": "#dce9ff", "surface-container-highest": "#d3e4fe", "on-error": "#ffffff", "on-primary": "#ffffff", "on-secondary-fixed": "#370e00", "tertiary-container": "#101f31", "inverse-surface": "#213145", "primary-fixed-dim": "#b8c7e6", "primary": "#000412", "inverse-primary": "#b8c7e6", "background": "#f8f9ff", "surface-container": "#e5eeff", "on-primary-container": "#7886a3", "on-primary-fixed": "#0c1b33", "tertiary": "#000511", "surface-variant": "#d3e4fe", "surface": "#f8f9ff", "surface-dim": "#cbdbf5", "on-secondary-fixed-variant": "#7f2b00", "inverse-on-surface": "#eaf1ff", "secondary-fixed-dim": "#ffb599", "on-tertiary": "#ffffff", "primary-container": "#0f1e36", "on-primary-fixed-variant": "#394761" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "gutter-sm": "1rem", "gutter": "1.5rem", "margin-sm": "1.25rem", "space-md": "1rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "3rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-md": ["Chivo"], "body-lg": ["Noto Sans"], "body-sm": ["Noto Sans"], "display-lg-mobile": ["Chivo"], "data-mono": ["Noto Sans"], "display-lg": ["Chivo"], "headline-xl-mobile": ["Chivo"], "label-lg": ["Chivo"], "title-md": ["Noto Sans"], "label-sm": ["Chivo"], "label-md": ["Chivo"], "headline-lg": ["Chivo"], "body-md": ["Noto Sans"], "headline-sm": ["Chivo"], "headline-xl": ["Chivo"], "headline-lg-mobile": ["Chivo"] }, "fontSize": { "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "0.02em", "fontWeight": "500" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "700" }], "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(15,30,54,0.06)]"><div class="bg-primary text-on-primary border-b border-outline/20"><div class="max-w-7xl mx-auto px-6 lg:px-12 h-10 flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-gutter"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-secondary-container">phone_in_talk</span><span class="text-tertiary-fixed font-data-mono text-data-mono font-semibold tracking-normal">02-850-7000</span><span class="text-outline-variant font-normal">(평일 08:30~17:30)</span></div><div class="hidden md:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-tertiary-fixed-dim">verified</span><span class="text-tertiary-fixed">ISO 9001 / ISO 14001 공인인증</span></div></div><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs text-on-primary hover:text-secondary-fixed transition-colors" data-path="catalog" href="#"><span class="material-symbols-outlined text-[15px]">download</span><span>종합 카탈로그 다운로드</span></a><div class="flex items-center gap-space-xs font-semibold"><button class="text-on-primary hover:text-secondary-fixed transition-colors font-bold" type="button">KOR</button><span class="text-outline">|</span><button class="text-on-primary-container hover:text-on-primary transition-colors font-normal" type="button">ENG</button></div></div></div></div><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="company" href="#"><div class="w-9 h-9 bg-primary-container text-on-primary flex items-center justify-center rounded"><span class="font-headline-lg text-headline-sm font-extrabold tracking-tighter text-secondary-container">D</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold text-primary tracking-tight leading-none group-hover:text-primary-container transition-colors">대한스틸</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase leading-none mt-1">DAEHAN STEEL</span></div></a></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-container text-primary font-bold"><a class="px-space-md py-space-sm rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg" data-path="company" href="#">회사소개</a><a class="px-space-md py-space-sm rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg" data-path="equipment" href="#">기계·설비소개</a><a aria-current="page" class="px-space-md py-space-sm rounded transition-colors bg-surface-container text-primary font-bold" data-path="location" href="#">오시는길</a><a class="px-space-md py-space-sm rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors font-label-lg text-label-lg" data-path="customer-board" href="4.html">고객게시판</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center gap-space-xs px-space-lg py-2.5 bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-lg text-label-lg rounded transition-colors shadow-sm" data-path="estimate-request" href="#"><span>온라인 견적 문의</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span></a><div class="flex items-center pl-space-sm border-l border-outline-variant/50"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida/AEtjO1UFYZskY-NIWe4ercnl0x95SthjMDqiDC1GpKJEzIx8wPtXW-J44k5WNa_YKzQM3JS2LZceNlVDFqhnD1e4bx1KVaYTCNtDNRQ5AXJIa2O0EhEz-_dDKziQmxD1b4-DUqRNwFNixzgfBBTbVp6tI-KT1f4korONbMjUxQc_W78htxqMdtHCqb6_p7o1NQGpJllBna3exHi6xiDxNxhqhvnRJLnmYS7fAwyK4k3GwiWitkigXrQl1lZGgq8i"/></div></div></div></header><main class="w-full pt-[120px] bg-surface min-h-[calc(100vh-120px)]"><div class="flex flex-col w-full">
+<!-- Top Visual Banner & Context Block -->
+<section class="relative w-full bg-primary-container text-on-primary overflow-hidden py-16 lg:py-24 px-6 lg:px-12">
+<!-- Ambient architectural structural glow -->
+<div class="absolute -right-24 -top-32 w-96 h-96 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-24 w-80 h-80 rounded-full bg-primary-fixed/5 blur-2xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 bg-surface-container-highest/10 text-secondary-fixed rounded mb-4 font-data-mono text-label-sm tracking-wider uppercase">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+            DAEHAN STEEL INDUSTRIAL NETWORK &amp; LOGISTICS
+          </div>
+<h1 class="font-headline-xl text-headline-xl text-surface-container-lowest tracking-tight">
+            대한스틸 사업장 및 공장 안내
+          </h1>
+<p class="mt-4 font-body-lg text-body-lg text-tertiary-fixed-dim leading-relaxed">
+            서울 본사 및 전국 주요 철강 클러스터(포항 제1·2공장, 당진 가공물류센터)에서 
+            중단 없는 신속한 제강 가공 및 전국 당일 배송 공급망을 지원합니다.
+          </p>
+</div>
+<!-- Quick Status Metrics Bar -->
+<div class="flex flex-wrap items-center gap-4 bg-tertiary-container/80 p-4 rounded-xl shadow-lg backdrop-blur-md">
+<div class="flex items-center gap-3 px-3 py-1">
+<div class="w-10 h-10 rounded bg-secondary-container/20 flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+</div>
+<div>
+<div class="font-data-mono text-label-sm text-tertiary-fixed-dim uppercase">화물 계근대 운영</div>
+<div class="font-title-md text-title-md font-bold text-surface-container-lowest">07:00 ~ 19:00</div>
+</div>
+</div>
+<div class="hidden sm:block w-px h-8 bg-outline/30"></div>
+<div class="flex items-center gap-3 px-3 py-1">
+<div class="w-10 h-10 rounded bg-surface-container-highest/20 flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-2xl">safety_check</span>
+</div>
+<div>
+<div class="font-data-mono text-label-sm text-tertiary-fixed-dim uppercase">방문 및 반출입</div>
+<div class="font-title-md text-title-md font-bold text-surface-container-lowest">사전 보안 등록제</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Navigation Tabs for Hubs -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 -mt-6 z-20">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl p-2 flex flex-wrap md:flex-nowrap gap-2" id="hub-tabs">
+<button class="hub-btn flex-1 min-w-[200px] text-left p-4 rounded-lg bg-primary-container text-on-primary transition-all duration-200" id="tab-pohang1" onclick="switchHub('pohang1')" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm font-bold">포항 제1공장</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary uppercase">제강·압연</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim truncate">연간 120만톤 생산 기지 및 대형 계근대</p>
+</button>
+<button class="hub-btn flex-1 min-w-[200px] text-left p-4 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200" id="tab-seoul" onclick="switchHub('seoul')" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm font-bold">서울 본사</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-surface-container-high text-on-surface-variant">경영·영업</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">여의도 파크원 타워 경영총괄/국내영업</p>
+</button>
+<button class="hub-btn flex-1 min-w-[200px] text-left p-4 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200" id="tab-pohang2" onclick="switchHub('pohang2')" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm font-bold">포항 제2공장</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-surface-container-high text-on-surface-variant">정밀가공</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">철근가공 및 특수 형강 가공 물류기지</p>
+</button>
+<button class="hub-btn flex-1 min-w-[200px] text-left p-4 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200" id="tab-dangjin" onclick="switchHub('dangjin')" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm font-bold">당진 물류가공센터</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-surface-container-high text-on-surface-variant">수도권 배송</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">부곡국가산단 서해안 거점 하역 허브</p>
+</button>
+</div>
+</section>
+<!-- Interactive Map Canvas & Route Links Section -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 py-12">
+<div class="bg-surface-container-lowest rounded-xl shadow-lg overflow-hidden flex flex-col">
+<!-- Map Header Bar with Viewport Controls -->
+<div class="p-4 bg-surface-container-low flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-secondary-container animate-ping"></div>
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="active-hub-title">대한스틸 포항 제1공장 (제강·압연 생산본부)</span>
+<span class="ml-2 font-data-mono text-body-sm text-on-surface-variant" id="active-hub-coord">36.0028° N, 129.3512° E</span>
+</div>
+</div>
+<!-- Map Layer & Utility Controls Mockup -->
+<div class="flex items-center gap-2">
+<div class="inline-flex rounded-lg bg-surface-container p-1 shadow-inner">
+<button class="px-3 py-1 rounded text-label-sm font-label-sm bg-surface-container-lowest shadow-sm font-bold text-primary" id="btn-map-normal" onclick="setMapMode('normal')" type="button">일반지도</button>
+<button class="px-3 py-1 rounded text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface" id="btn-map-satellite" onclick="setMapMode('satellite')" type="button">위성/지형</button>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-sm font-label-sm transition-colors" onclick="toggleRoadview()" type="button">
+<span class="material-symbols-outlined text-[16px]">streetview</span>
+            로드뷰 보기
+          </button>
+</div>
+</div>
+<!-- Map Graphic Canvas / Simulation Area -->
+<div class="relative w-full h-[460px] bg-slate-900 overflow-hidden group select-none">
+<!-- Rendered map representation using styled image placeholder -->
+<div class="w-full h-full bg-cover bg-center transition-all duration-700" data-alt="High precision modern top-down GIS industrial map schematic with clean dark-slate and blueprint roads, highlighted steel mill facility footprint, container yards, and clearly marked truck ingress route with amber neon pathway" id="map-background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDv9xMqJ4KS0QycZt9kGKiSK2mfyCV7YLV38vAT5YrO0-ySSZ366PQGIdUzDTAB2fsRCXJl99_2OKGsdNb9SHVzJK3hoEUq6p2uj7x_QIUFEI1fk6UDHXM8daL_1G-G7jVG0XYvnH_V3SQx_dTlI2cLUsHeektv3aGfAzh-CfW16o8NK8gN-PbeOkqvsYWxjwkQEYetgfJT-SLezNQpX_ZV1QSa2bU_xqbIXig_1cx7FCAx-qgM6KkYbA')">
+<!-- Dark scrim for UI readability -->
+<div class="absolute inset-0 bg-primary/40 backdrop-contrast-125"></div>
+</div>
+<!-- Stylized Map Vector Overlay / Industrial Grid Marker Elements -->
+<div class="absolute inset-0 pointer-events-none flex items-center justify-center">
+<!-- Pulse Radius Circles -->
+<div class="w-64 h-64 rounded-full border border-secondary-container/40 bg-secondary-container/5 animate-pulse flex items-center justify-center">
+<div class="w-40 h-40 rounded-full border border-secondary-container/60 bg-secondary-container/10 flex items-center justify-center">
+<!-- Pin Center Marker -->
+<div class="pointer-events-auto transform -translate-y-8 flex flex-col items-center">
+<div class="bg-primary-container text-on-primary px-3 py-1.5 rounded shadow-2xl flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-lg">factory</span>
+<div class="flex flex-col text-left">
+<span class="font-headline-sm text-[12px] font-bold text-surface-container-lowest" id="marker-name">(주)대한스틸 포항제1공장</span>
+<span class="font-data-mono text-[10px] text-secondary-fixed">화물 진입로: 서문 게이트2</span>
+</div>
+</div>
+<div class="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-primary-container"></div>
+<div class="w-3 h-3 bg-secondary-container rounded-full ring-4 ring-secondary-container/40 mt-1 shadow-lg"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Navigation Controls (Top Right Overlay) -->
+<div class="absolute top-4 right-4 flex flex-col gap-1 shadow-md z-10">
+<button class="w-10 h-10 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-t flex items-center justify-center transition-colors" title="확대" type="button">
+<span class="material-symbols-outlined text-xl">add</span>
+</button>
+<button class="w-10 h-10 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded-b flex items-center justify-center transition-colors" title="축소" type="button">
+<span class="material-symbols-outlined text-xl">remove</span>
+</button>
+<button class="w-10 h-10 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface rounded mt-2 flex items-center justify-center transition-colors" title="현재 위치 리셋" type="button">
+<span class="material-symbols-outlined text-xl">my_location</span>
+</button>
+</div>
+<!-- Truck Ingress Callout Pin (Bottom Left Overlay) -->
+<div class="absolute bottom-4 left-4 bg-primary-container/95 text-on-primary p-3 rounded-lg shadow-xl backdrop-blur-md max-w-sm flex items-start gap-3">
+<div class="p-2 rounded bg-secondary-container text-on-secondary mt-0.5">
+<span class="material-symbols-outlined text-lg leading-none">front_loader</span>
+</div>
+<div>
+<div class="font-headline-sm text-body-sm font-bold text-secondary-fixed">25톤 이상 대형화물 전용 진입로</div>
+<div class="font-body-sm text-[12px] text-tertiary-fixed-dim mt-0.5">
+              공단서로 4-way 교차로에서 우회전 후 화물전용 제2게이트로 진입 (차량 높이 4.8m 이하 제한)
+            </div>
+</div>
+</div>
+</div>
+<!-- External Map Navigation Direct Connect Bar -->
+<div class="p-4 bg-surface-container-lowest flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-secondary text-lg">navigation</span>
+<span class="font-bold text-on-surface">스마트폰 내비게이션 바로가기</span>
+<span class="text-outline hidden sm:inline">|</span>
+<span class="text-body-sm text-on-surface-variant hidden sm:inline">설치된 지도 앱을 실행하여 즉시 목적지로 설정합니다.</span>
+</div>
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<a class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-label-md text-label-md font-bold transition-all shadow-sm" href="#" rel="noopener" target="_blank">
+<span class="w-2.5 h-2.5 rounded-full bg-[#3C1E1E]"></span>
+<span>카카오맵 바로가기</span>
+</a>
+<a class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded bg-[#03C75A] hover:bg-[#02b350] text-surface-container-lowest font-label-md text-label-md font-bold transition-all shadow-sm" href="#" rel="noopener" target="_blank">
+<span class="w-2.5 h-2.5 rounded-full bg-white"></span>
+<span>네이버 지도 보기</span>
+</a>
+<a class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded bg-primary-container hover:bg-inverse-surface text-surface-container-lowest font-label-md text-label-md font-bold transition-all shadow-sm" href="#" rel="noopener" target="_blank">
+<span class="material-symbols-outlined text-secondary-container text-base">directions_car</span>
+<span>티맵 내비게이션 안내</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Location Information & Heavy Vehicle Protocol -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 pb-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Facility Details & Operations Panel -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-md">
+<div class="flex items-center justify-between pb-6 border-b border-outline-variant/30">
+<div>
+<div class="inline-flex items-center gap-2 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+                FACILITY SPECIFICATIONS
+              </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1" id="hub-name-label">
+                포항 제1공장 (제강·압연 생산)
+              </h2>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors" onclick="copyAddress()" type="button">
+<span class="material-symbols-outlined text-base">content_copy</span>
+<span>주소 복사</span>
+</button>
+</div>
+<!-- Structured Specifications List -->
+<div class="mt-6 space-y-4">
+<div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 py-2">
+<span class="w-28 flex-shrink-0 font-label-md text-label-md text-on-surface-variant font-semibold">도로명 주소</span>
+<span class="font-body-md text-body-md text-on-surface font-medium" id="hub-road-addr">
+                경상북도 포항시 남구 철강산단로 128번길 (대송면)
+              </span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 py-2">
+<span class="w-28 flex-shrink-0 font-label-md text-label-md text-on-surface-variant font-semibold">지번 주소</span>
+<span class="font-body-md text-body-md text-on-surface" id="hub-lot-addr">
+                경상북도 포항시 남구 대송면 제내리 1024-5
+              </span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 py-2">
+<span class="w-28 flex-shrink-0 font-label-md text-label-md text-on-surface-variant font-semibold">대표 전화 / FAX</span>
+<div class="flex flex-wrap items-center gap-4">
+<span class="font-data-mono text-body-md font-bold text-primary" id="hub-phone">054-280-5000</span>
+<span class="text-outline">/</span>
+<span class="font-data-mono text-body-md text-on-surface-variant" id="hub-fax">054-280-5005</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 py-2">
+<span class="w-28 flex-shrink-0 font-label-md text-label-md text-on-surface-variant font-semibold">업무 운영시간</span>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium" id="hub-hours">
+                  평일 08:00 ~ 18:00 (토, 일요일 및 법정 공휴일 휴무)
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  ※ 화물 출하 업무는 사전 배차 승인 시 07:00부터 개시됩니다.
+                </span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-6 py-2">
+<span class="w-28 flex-shrink-0 font-label-md text-label-md text-on-surface-variant font-semibold">주요 생산 품목</span>
+<span class="font-body-md text-body-md text-on-surface" id="hub-products">
+                고장력 이형철근(SD400/500/600), 코일철근(Bar in Coil), 특수 탄소강 빌릿
+              </span>
+</div>
+</div>
+</div>
+<!-- CRITICAL: Heavy Truck Ingress Instruction Notice Banner -->
+<div class="bg-surface-container-high rounded-xl p-6 shadow-md relative overflow-hidden">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center text-on-secondary flex-shrink-0 shadow-md">
+<span class="material-symbols-outlined text-2xl">warning</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary">필독 안내</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                  대형 화물차량 / 트럭 출입 수칙 안내
+                </h3>
+</div>
+<p class="mt-2 font-body-md text-body-md text-on-surface leading-relaxed font-semibold">
+                "25톤 이상 대형 트레일러 및 특수 화물 차량은 본관 정문이 아닌 <span class="text-secondary underline decoration-2">서문 화물전용 제2게이트</span>로 진입하여 인/아웃 계근대 계량 후 하차장으로 이동하시기 바랍니다."
+              </p>
+<div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-bold">1단계: 진입 통과</div>
+<div class="font-body-sm text-body-sm text-on-surface mt-1">서문 제2게이트 번호판 자동인식</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-bold">2단계: 공차/적재 계근</div>
+<div class="font-body-sm text-body-sm text-on-surface mt-1">100톤 스마트 무인 계근대 측정</div>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<div class="font-label-sm text-label-sm text-on-surface-variant font-bold">3단계: 하차/상차장 배정</div>
+<div class="font-body-sm text-body-sm text-on-surface mt-1">전광판 지정 베이(A~D) 진입 대기</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Safety & Pre-Registration Portal Box -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Safety Requirements Plate -->
+<div class="bg-primary-container text-on-primary p-8 rounded-xl shadow-xl relative overflow-hidden">
+<div class="absolute -right-12 -bottom-12 w-48 h-48 rounded-full bg-secondary-container/10 pointer-events-none"></div>
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-secondary-container">shield</span>
+<span class="font-label-md text-label-md text-secondary-fixed uppercase tracking-wider font-bold">Safety Compliance</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-surface-container-lowest">
+            공장 내 안전수칙 및 필수 보호구
+          </h3>
+<p class="font-body-sm text-body-sm text-tertiary-fixed-dim mt-2">
+            산업안전보건법 및 중대재해처벌법 지침에 따라 공장 구역 내에서는 규정 보호구를 항시 착용하여야 합니다. 미착용 시 진입이 통제될 수 있습니다.
+          </p>
+<!-- Safety Badges -->
+<div class="mt-6 grid grid-cols-2 gap-3">
+<div class="p-3 bg-tertiary-container rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-2xl">engineering</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-surface-container-lowest">안전모 착용</div>
+<div class="font-body-sm text-[11px] text-tertiary-fixed-dim">턱끈 체결 필수</div>
+</div>
+</div>
+<div class="p-3 bg-tertiary-container rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-2xl">drive_file_move_outline</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-surface-container-lowest">안전화 착용</div>
+<div class="font-body-sm text-[11px] text-tertiary-fixed-dim">스틸 토캡 인증품</div>
+</div>
+</div>
+<div class="p-3 bg-tertiary-container rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-2xl">visibility</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-surface-container-lowest">보안경 착용</div>
+<div class="font-body-sm text-[11px] text-tertiary-fixed-dim">비산물 방지 보호구</div>
+</div>
+</div>
+<div class="p-3 bg-tertiary-container rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-2xl">speed</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-surface-container-lowest">구내속도 20km</div>
+<div class="font-body-sm text-[11px] text-tertiary-fixed-dim">서행 및 비상점멸등</div>
+</div>
+</div>
+</div>
+<!-- Pre-registration CTA Action Button -->
+<div class="mt-8 pt-6 border-t border-on-tertiary-container/20">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-tertiary-fixed">온라인 사전 등록 권장</span>
+<span class="text-secondary-fixed">신속 통과 지원</span>
+</div>
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 bg-secondary hover:bg-on-secondary-container text-on-secondary font-label-lg text-label-lg rounded font-bold transition-all shadow-md" data-path="gate-pass" href="#">
+<span class="material-symbols-outlined text-xl">badge</span>
+<span>방문객 사전 출입증 및 반출입 등록</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<span class="font-body-sm text-[11px] text-tertiary-fixed-dim text-center">
+                당일 화물 수송 기사님 및 협력사 임직원은 입차 최소 2시간 전 사전 등록 시 대기 없이 즉시 입차됩니다.
+              </span>
+</div>
+</div>
+</div>
+<!-- Direct Contact Assistance Card -->
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-md flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">headset_mic</span>
+</div>
+<div>
+<div class="font-headline-sm text-body-md font-bold text-on-surface">출하 및 물류 진입 관제실</div>
+<div class="font-data-mono text-headline-sm font-bold text-secondary">054-280-5114</div>
+<div class="font-body-sm text-[12px] text-on-surface-variant">진입로 혼잡 문의 및 특수차량 계근 상담</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Transportation Transit Guides (Grid Layout) -->
+<section class="max-w-7xl mx-auto w-full px-6 lg:px-12 pb-20">
+<div class="mb-8">
+<div class="inline-flex items-center gap-1.5 text-secondary font-label-sm text-label-sm font-bold uppercase">
+<span class="material-symbols-outlined text-base">commute</span>
+        TRANSPORTATION DIRECTIONS
+      </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">
+        교통편별 상세 오시는 길
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        방문 수단에 따라 최적화된 상세 노선 및 하차 경로를 안내해 드립니다.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Transportation Card 1: Car / Freight -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-md flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">directions_car</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1">BY HIGHWAY &amp; ROAD</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-3">자가용 / 화물차 이용 시</h3>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-2">
+<span class="font-bold text-primary flex-shrink-0">1.</span>
+<span>포항IC(익산포항고속도로) 톨게이트 진출</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="font-bold text-primary flex-shrink-0">2.</span>
+<span>철강산업단지·포항공항 방면으로 약 15분간 직진</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="font-bold text-primary flex-shrink-0">3.</span>
+<span>철강공단 삼거리에서 대송면 방면 우회전 후 800m 진입</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="font-bold text-secondary flex-shrink-0">4.</span>
+<span class="text-on-surface font-medium">일반 승용차는 정문, 25톤 이상 화물 트럭은 서문 제2게이트로 분기 진입</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>포항IC 기준 소요시간</span>
+<span class="font-data-mono font-bold text-primary">약 20분 소요</span>
+</div>
+</div>
+<!-- Transportation Card 2: Public Transit / KTX -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-md flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">train</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1">BY RAILWAY &amp; BUS</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-3">대중교통 / KTX 이용 시</h3>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-2">
+<span class="font-bold text-primary flex-shrink-0">·</span>
+<div>
+<strong class="text-on-surface">KTX 포항역 하차</strong>
+<p class="mt-0.5">택시 승차장 이용 시 '철강공단 2단지 대한스틸 제1공장' 요청 (약 25분 소요, 예상 운임 약 18,000원)</p>
+</div>
+</div>
+<div class="flex items-start gap-2">
+<span class="font-bold text-primary flex-shrink-0">·</span>
+<div>
+<strong class="text-on-surface">시내버스 이용 시</strong>
+<p class="mt-0.5">305번 또는 306번 버스 탑승 → '공단파출소 및 제내삼거리' 정류장 하차 후 도보 7분</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>포항역(KTX) 기준</span>
+<span class="font-data-mono font-bold text-primary">약 25분 ~ 35분 소요</span>
+</div>
+</div>
+<!-- Transportation Card 3: Air Travel -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-md flex flex-col justify-between hover:shadow-xl transition-all duration-300">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-low text-primary flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-2xl">flight_land</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider mb-1">BY AIRPORT</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-3">항공편 이용 시 (김포-포항경주)</h3>
+<div class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex items-start gap-2">
+<span class="font-bold text-primary flex-shrink-0">1.</span>
+<span>포항경주공항(KPO) 여객터미널 도착</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="font-bold text-primary flex-shrink-0">2.</span>
+<span>공항로에서 동해안로 포스코 방면 진입</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="font-bold text-primary flex-shrink-0">3.</span>
+<span>철강산단 2단지 방면으로 이동 (총 거리 약 9.8km)</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="font-bold text-primary flex-shrink-0">4.</span>
+<span>택시 및 렌터카 탑승 시 15분 이내 도착 가능</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-4 border-t border-outline-variant/30 flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>포항경주공항 기준</span>
+<span class="font-data-mono font-bold text-primary">차량 15분 (9.8km)</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Hub data state representation
+  const hubData = {
+    pohang1: {
+      title: "대한스틸 포항 제1공장 (제강·압연 생산본부)",
+      label: "포항 제1공장 (제강·압연 생산)",
+      coord: "36.0028° N, 129.3512° E",
+      marker: "(주)대한스틸 포항제1공장",
+      roadAddr: "경상북도 포항시 남구 철강산단로 128번길 (대송면)",
+      lotAddr: "경상북도 포항시 남구 대송면 제내리 1024-5",
+      phone: "054-280-5000",
+      fax: "054-280-5005",
+      hours: "평일 08:00 ~ 18:00 (토, 일요일 및 공휴일 휴무)",
+      products: "고장력 이형철근(SD400/500/600), 코일철근(Bar in Coil), 특수 탄소강 빌릿"
+    },
+    seoul: {
+      title: "대한스틸 서울 본사 (경영·국내외 영업총괄)",
+      label: "서울 본사 (영업·경영총괄)",
+      coord: "37.5255° N, 126.9268° E",
+      marker: "(주)대한스틸 서울 본사",
+      roadAddr: "서울특별시 영등포구 여의대로 108 대한스틸빌딩 18층",
+      lotAddr: "서울특별시 영등포구 여의도동 22",
+      phone: "02-850-7000",
+      fax: "02-850-7099",
+      hours: "평일 08:30 ~ 17:30 (토, 일요일 및 공휴일 휴무)",
+      products: "기업 경영기획, 글로벌 원자재 조달, 철강 제품 견적 및 납품 계약 총괄"
+    },
+    pohang2: {
+      title: "대한스틸 포항 제2공장 (정밀가공센터)",
+      label: "포항 제2공장 (정밀가공센터)",
+      coord: "36.0095° N, 129.3621° E",
+      marker: "(주)대한스틸 포항 제2공장",
+      roadAddr: "경상북도 포항시 남구 철강로 245번길 30",
+      lotAddr: "경상북도 포항시 남구 괴동동 89-12",
+      phone: "054-280-5300",
+      fax: "054-280-5305",
+      hours: "평일 08:00 ~ 18:00 (토요일 격주 출하 운영)",
+      products: "건축용 맞춤 조립철근(Pre-Fab), 무용접 강관 이음, 맞춤 정밀 절단봉"
+    },
+    dangjin: {
+      title: "대한스틸 당진 가공물류센터 (중부·수도권 하역 거점)",
+      label: "당진 물류가공센터",
+      coord: "36.9582° N, 126.7118° E",
+      marker: "(주)대한스틸 당진물류센터",
+      roadAddr: "충청남도 당진시 송악읍 부곡공단로 88",
+      lotAddr: "충청남도 당진시 송악읍 부곡리 541-2",
+      phone: "041-359-2000",
+      fax: "041-359-2005",
+      hours: "평일 07:30 ~ 18:30 (수도권 당일 배송망 상시가동)",
+      products: "수도권 거점 철근 보관, 1차 가공품 보관, 해상 반입 화물 배송 기지"
+    }
+  };
+
+  function switchHub(key) {
+    const data = hubData[key];
+    if (!data) return;
+
+    // Update active tab styles
+    const tabs = ['pohang1', 'seoul', 'pohang2', 'dangjin'];
+    tabs.forEach(t => {
+      const el = document.getElementById('tab-' + t);
+      if (t === key) {
+        el.className = 'hub-btn flex-1 min-w-[200px] text-left p-4 rounded-lg bg-primary-container text-on-primary transition-all duration-200 shadow-md';
+        const badge = el.querySelector('span:last-child');
+        if (badge) badge.className = 'px-2 py-0.5 rounded text-[11px] font-bold bg-secondary-container text-on-secondary uppercase';
+      } else {
+        el.className = 'hub-btn flex-1 min-w-[200px] text-left p-4 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-all duration-200';
+        const badge = el.querySelector('span:last-child');
+        if (badge) badge.className = 'px-2 py-0.5 rounded text-[11px] font-bold bg-surface-container-high text-on-surface-variant';
+      }
+    });
+
+    // Update Text Fields in UI
+    document.getElementById('active-hub-title').innerText = data.title;
+    document.getElementById('active-hub-coord').innerText = data.coord;
+    document.getElementById('marker-name').innerText = data.marker;
+    document.getElementById('hub-name-label').innerText = data.label;
+    document.getElementById('hub-road-addr').innerText = data.roadAddr;
+    document.getElementById('hub-lot-addr').innerText = data.lotAddr;
+    document.getElementById('hub-phone').innerText = data.phone;
+    document.getElementById('hub-fax').innerText = data.fax;
+    document.getElementById('hub-hours').innerText = data.hours;
+    document.getElementById('hub-products').innerText = data.products;
+  }
+
+  function setMapMode(mode) {
+    const btnNormal = document.getElementById('btn-map-normal');
+    const btnSatellite = document.getElementById('btn-map-satellite');
+    const mapBg = document.getElementById('map-background');
+
+    if (mode === 'satellite') {
+      btnSatellite.className = 'px-3 py-1 rounded text-label-sm font-label-sm bg-surface-container-lowest shadow-sm font-bold text-primary';
+      btnNormal.className = 'px-3 py-1 rounded text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface';
+      mapBg.style.filter = 'contrast(1.15) brightness(0.9) saturate(1.1)';
+    } else {
+      btnNormal.className = 'px-3 py-1 rounded text-label-sm font-label-sm bg-surface-container-lowest shadow-sm font-bold text-primary';
+      btnSatellite.className = 'px-3 py-1 rounded text-label-sm font-label-sm text-on-surface-variant hover:text-on-surface';
+      mapBg.style.filter = 'none';
+    }
+  }
+
+  function toggleRoadview() {
+    alert("선택하신 사업장의 고화질 파노라마 공장 뷰가 새 창에서 열립니다.");
+  }
+
+  function copyAddress() {
+    const addr = document.getElementById('hub-road-addr').innerText;
+    navigator.clipboard.writeText(addr).then(() => {
+      alert("사업장 도로명 주소가 클립보드에 복사되었습니다:\n" + addr);
+    }).catch(() => {
+      alert("주소: " + addr);
+    });
+  }
+</script></main><footer class="w-full bg-primary-container text-on-primary-container"><div class="bg-tertiary-container/60 border-b border-on-tertiary-container/20"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-md flex flex-wrap items-center justify-between gap-space-md font-label-md text-label-md"><div class="flex flex-wrap items-center gap-space-lg text-tertiary-fixed-dim"><a class="text-tertiary-fixed font-bold hover:underline" data-path="privacy" href="#">개인정보처리방침</a><span class="text-outline">|</span><a class="hover:text-tertiary-fixed transition-colors" data-path="email-rejection" href="#">이메일무단수집거부</a><span class="text-outline">|</span><a class="hover:text-tertiary-fixed transition-colors" data-path="terms" href="#">이용약관</a><span class="text-outline">|</span><a class="hover:text-tertiary-fixed transition-colors" data-path="quality" href="#">품질보증기준</a></div><div class="flex items-center gap-space-sm"><label class="sr-only" for="family-site">패밀리 사이트 선택</label><select class="bg-tertiary text-tertiary-fixed border border-outline/40 rounded px-space-sm py-1.5 font-body-sm text-body-sm focus:outline-none focus:border-secondary-container" id="family-site"><option value="">FAMILY SITES</option><option value="1">대한특수강(주)</option><option value="2">대한인프라솔루션</option><option value="3">철강기술연구소</option><option value="4">글로벌SCM물류</option></select></div></div></div><div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-xl"><div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter"><div class="lg:col-span-8 flex flex-col gap-space-sm"><div class="flex items-center gap-space-sm mb-space-xs"><span class="font-headline-md text-headline-sm font-bold text-on-primary tracking-tight">(주)대한스틸</span><span class="font-label-sm text-label-sm text-tertiary-fixed-dim tracking-wider uppercase">DAEHAN STEEL CORP.</span></div><div class="font-body-sm text-body-sm text-on-tertiary-container space-y-1"><p class="flex flex-wrap gap-x-space-md gap-y-0.5"><span>대표이사: 강대현</span><span class="text-outline">·</span><span>사업자등록번호: 504-81-29471</span><span class="text-outline">·</span><span>통신판매업신고: 제 2021-서울영등포-1240호</span></p><p class="flex flex-wrap gap-x-space-md gap-y-0.5"><span>[본사] 서울특별시 영등포구 여의대로 108 대한스틸빌딩 18층</span></p><p class="flex flex-wrap gap-x-space-md gap-y-0.5"><span>[포항제1공장] 경상북도 포항시 남구 철강산단로 142 (연일읍)</span><span class="text-outline">·</span><span>[당진가공센터] 충청남도 당진시 송악읍 부곡공단로 88</span></p><p class="flex flex-wrap gap-x-space-md gap-y-0.5 pt-1"><span class="text-tertiary-fixed">대표전화: 02-850-7000</span><span class="text-outline">·</span><span>팩스: 02-850-7099</span><span class="text-outline">·</span><span class="text-tertiary-fixed">이메일: master@daehansteel.co.kr</span></p></div><div class="mt-space-md pt-space-md border-t border-on-tertiary-container/15 font-data-mono text-body-sm text-on-tertiary-container/70">Copyright © 2025 DAEHAN STEEL Corp. All Rights Reserved.</div></div><div class="lg:col-span-4 flex flex-col justify-between items-start lg:items-end gap-space-md"><div class="w-full flex lg:justify-end gap-space-sm"><div class="p-space-sm bg-tertiary border border-outline/30 rounded flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-container text-[20px]">workspace_premium</span><div class="text-left"><div class="font-label-sm text-[10px] text-tertiary-fixed uppercase font-bold leading-none">ISO 9001 / 14001</div><div class="font-body-sm text-[10px] text-on-tertiary-container leading-none mt-1">품질/환경경영인증</div></div></div><div class="p-space-sm bg-tertiary border border-outline/30 rounded flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-container text-[20px]">verified_user</span><div class="text-left"><div class="font-label-sm text-[10px] text-tertiary-fixed uppercase font-bold leading-none">KS D 3504 / 3503</div><div class="font-body-sm text-[10px] text-on-tertiary-container leading-none mt-1">한국표준협회 KS마크</div></div></div></div><div class="flex items-center gap-space-xs text-on-tertiary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-secondary-container">shield</span><span>국가기간산업 강재 공급망 안정화 협력사</span></div></div></div></div></footer></body></html>
